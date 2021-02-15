@@ -2,207 +2,242 @@
 
 let hour = ['6am', '7am','8am', '9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']
 
+function random(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
 
 let seattle = {
     Location:'Seattle',
     minCusPerHour:23 ,
     maxCusPerHour :65 ,
     avgCookPerCus :6.3,
-    cookPerHour:[],
+    CEHour:[],
+    Coeh:[],
+    total:0,
 
-    
-    render:function (){
-        let parent=document.getElementById('mainpage')
-        let ulEl = document.createElement('ul');
-        let shopName = document.createElement('h1');
-        shopName.textContent=this.Location;
-        parent.appendChild(shopName);
-        parent.appendChild(ulEl);
-        let liEl;
-        let total = 0; 
+calcCEHour:function(){
         for(let i = 0 ; i <hour.length; i++)
-        { 
+        { this.CEHour.push(random(this.minCusPerHour,this
+                .maxCusPerHour));   
+        }},
 
-            this.cookPerHour.push(Math.floor((Math.random() * (1+this.maxCusPerHour-this.minCusPerHour) +this.minCusPerHour)*this.avgCookPerCus));
-            total =  total+this.cookPerHour[i] 
-        
-            liEl = document.createElement('li');
-            ulEl.appendChild(liEl);
-           
-            liEl.textContent = hour[i]+' : ' + this.cookPerHour[i];
-            
-           
-            }
-            liEl.textContent= 'total : ' + total;
+calcCoeh:function(){
+       for (let i=0;i<hour.length;i++){
+this.Coeh.push(Math.floor(this.
+    CEHour[i]*this.avgCookPerCus));
+    this.total+=this.Coeh[i]
     
-            },
+}
+//console.log(this.Coeh)
+},
+rander:function(){
+let parent=document.getElementById('parent');
+let shpn =document.createElement('h3');
+parent.appendChild(shpn);
+shpn.textContent=this.Location;
+let uol=document.createElement('ul');
+parent.appendChild(uol);
 
+for (let i=0;i<hour.length;i++){
+let liit=document.createElement('li');
+uol.appendChild(liit);
+liit.textContent = `${hour[i]}: ${this.Coeh[i]} cookies` 
 
 }
-   
+let totalit=document.createElement('li')
+uol.appendChild(totalit)
+totalit.textContent=`total: ${this.total} cookies`;
+}}
+seattle.calcCEHour();
+seattle.calcCoeh();
+seattle.rander();
 
-seattle.render();
 
-
-  
-
+/////////////////////////////////////
 let tokyo = {
-    Location:'Tokyo',
-    minCusPerHour:3 ,
-    maxCusPerHour :24 ,
-    avgCookPerCus :1.2,
-    cookPerHour:[],
-    render:function (){
-        let parent=document.getElementById('mainpage')
-        let ulEl = document.createElement('ul');
-        let shopName = document.createElement('h1');
-        shopName.textContent=this.Location;
-        parent.appendChild(shopName);
-        parent.appendChild(ulEl);
-        let liEl; 
-        let total=0;
+    Location:'tokyo',
+    minCusPerHour:23 ,
+    maxCusPerHour :65 ,
+    avgCookPerCus :6.3,
+    CEHour:[],
+    Coeh:[],
+    total:0,
+
+calcCEHour:function(){
         for(let i = 0 ; i <hour.length; i++)
-        {
-            this.cookPerHour.push(Math.floor((Math.random() * (1+this.maxCusPerHour-this.minCusPerHour) +this.minCusPerHour)*this.avgCookPerCus));
-            total =  total+this.cookPerHour[i] 
-        
-            liEl = document.createElement('li');
-            ulEl.appendChild(liEl);
-           
-            liEl.textContent = hour[i]+' : ' + this.cookPerHour[i];
-            
-           
-            }
-            liEl.textContent= 'total : ' + total;}
+        { this.CEHour.push(random(this.minCusPerHour,this
+                .maxCusPerHour));   
+        }},
 
-           
-};
-
-tokyo.render();
-
-
-   
-
+calcCoeh:function(){
+       for (let i=0;i<hour.length;i++){
+this.Coeh.push(Math.floor(this.
+    CEHour[i]*this.avgCookPerCus));
+    this.total+=this.Coeh[i]
     
+}
+//console.log(this.Coeh)
+},
+rander:function(){
+let parent=document.getElementById('parent');
+let shpn =document.createElement('h3');
+parent.appendChild(shpn);
+shpn.textContent=this.Location;
+let uol=document.createElement('ul');
+parent.appendChild(uol);
+
+for (let i=0;i<hour.length;i++){
+let liit=document.createElement('li');
+uol.appendChild(liit);
+liit.textContent = `${hour[i]}: ${this.Coeh[i]} cookies` 
+
+}
+let totalit=document.createElement('li')
+uol.appendChild(totalit)
+totalit.textContent=`total: ${this.total} cookies`;
+}}
+tokyo.calcCEHour();
+tokyo.calcCoeh();
+tokyo.rander();
 
 
-let dubai = {
+
+///////////////////////////////////////
+    
+let Dubai = {
     Location:'Dubai',
-    minCusPerHour:11 ,
-    maxCusPerHour:38 ,
-    avgCookPerCus:3.7,
-    cookPerHour:[],
-    render:function (){
-        let parent=document.getElementById('mainpage')
-        let ulEl = document.createElement('ul');
-        let shopName = document.createElement('h1');
-        shopName.textContent=this.Location;
-        parent.appendChild(shopName);
-        parent.appendChild(ulEl);
-        let liEl; 
-        let total=0;
+    minCusPerHour:23 ,
+    maxCusPerHour :65 ,
+    avgCookPerCus :6.3,
+    CEHour:[],
+    Coeh:[],
+    total:0,
+
+calcCEHour:function(){
         for(let i = 0 ; i <hour.length; i++)
-        {
-            this.cookPerHour.push(Math.floor((Math.random() * (1+this.maxCusPerHour-this.minCusPerHour) +this.minCusPerHour)*this.avgCookPerCus));
-            total =  total+this.cookPerHour[i] 
-        
-            liEl = document.createElement('li');
-            ulEl.appendChild(liEl);
-           
-            liEl.textContent = hour[i]+' : ' + this.cookPerHour[i];
-            
-           
-            }
-            liEl.textContent= 'total : ' + total;}
+        { this.CEHour.push(random(this.minCusPerHour,this
+                .maxCusPerHour));   
+        }},
 
-           
-};
-
-
-
-dubai.render();
-
-
-
-
-
-let paris = {
-    Location:'Paris',
-    minCusPerHour:20,
-    maxCusPerHour :38 ,
-    avgCookPerCus :2.3,
-    cookPerHour:[],
-    render:function (){
-        let parent=document.getElementById('mainpage')
-        let ulEl = document.createElement('ul');
-        let shopName = document.createElement('h1');
-        shopName.textContent=this.Location;
-        parent.appendChild(shopName);
-        parent.appendChild(ulEl);
-        let liEl; 
-        let total=0;
-        for(let i = 0 ; i <hour.length; i++)
-        {
-            this.cookPerHour.push(Math.floor((Math.random() * (1+this.maxCusPerHour-this.minCusPerHour) +this.minCusPerHour)*this.avgCookPerCus));
-            total =  total+this.cookPerHour[i] 
-        
-            liEl = document.createElement('li');
-            ulEl.appendChild(liEl);
-           
-            liEl.textContent = hour[i]+' : ' + this.cookPerHour[i];
-            
-           
-            }
-            liEl.textContent= 'total : ' + total;}
-
-           
-};
-
-paris.render();
-
-
-
-
-
-
-let lima = {
-    Location:'Lima',
-    minCusPerHour:2,
-    maxCusPerHour:16,
-    avgCookPerCus:4.6,
-    cookPerHour:[],
-    render:function (){
-        let parent=document.getElementById('mainpage')
-        let ulEl = document.createElement('ul');
-        let shopName = document.createElement('h1');
-        shopName.textContent=this.Location;
-        parent.appendChild(shopName);
-        parent.appendChild(ulEl);
-        let liEl; 
-        let total=0;
-        for(let i = 0 ; i <hour.length; i++)
-        {
-            this.cookPerHour.push(Math.floor((Math.random() * (1+this.maxCusPerHour-this.minCusPerHour) +this.minCusPerHour)*this.avgCookPerCus));
-            total =  total+this.cookPerHour[i] 
-        
-            liEl = document.createElement('li');
-            ulEl.appendChild(liEl);
-           
-            liEl.textContent = hour[i]+' : ' + this.cookPerHour[i];
-            
-            }
-            liEl.textContent= 'total : ' + total;}
-
+calcCoeh:function(){
+       for (let i=0;i<hour.length;i++){
+this.Coeh.push(Math.floor(this.
+    CEHour[i]*this.avgCookPerCus));
+    this.total+=this.Coeh[i]
     
+}
+//console.log(this.Coeh)
+},
+rander:function(){
+let parent=document.getElementById('parent');
+let shpn =document.createElement('h3');
+parent.appendChild(shpn);
+shpn.textContent=this.Location;
+let uol=document.createElement('ul');
+parent.appendChild(uol);
 
-};
+for (let i=0;i<hour.length;i++){
+let liit=document.createElement('li');
+uol.appendChild(liit);
+liit.textContent = `${hour[i]}: ${this.Coeh[i]} cookies` 
 
-lima.render();
+}
+let totalit=document.createElement('li')
+uol.appendChild(totalit)
+totalit.textContent=`total: ${this.total} cookies`;
+}}
+Dubai.calcCEHour();
+Dubai.calcCoeh();
+Dubai.rander();
+////////////////////////////////
+let Paris = {
+    Location:'Paris',
+    minCusPerHour:23 ,
+    maxCusPerHour :65 ,
+    avgCookPerCus :6.3,
+    CEHour:[],
+    Coeh:[],
+    total:0,
 
-// let image = document.createElement('img');
-// parent.appendChild(image);
-//  image.setAttribute('src','img/' + salmon+'.png');
+calcCEHour:function(){
+        for(let i = 0 ; i <hour.length; i++)
+        { this.CEHour.push(random(this.minCusPerHour,this
+                .maxCusPerHour));   
+        }},
 
-  
+calcCoeh:function(){
+       for (let i=0;i<hour.length;i++){
+this.Coeh.push(Math.floor(this.
+    CEHour[i]*this.avgCookPerCus));
+    this.total+=this.Coeh[i]
+    
+}
+//console.log(this.Coeh)
+},
+rander:function(){
+let parent=document.getElementById('parent');
+let shpn =document.createElement('h3');
+parent.appendChild(shpn);
+shpn.textContent=this.Location;
+let uol=document.createElement('ul');
+parent.appendChild(uol);
 
+for (let i=0;i<hour.length;i++){
+let liit=document.createElement('li');
+uol.appendChild(liit);
+liit.textContent = `${hour[i]}: ${this.Coeh[i]} cookies` 
 
+}
+let totalit=document.createElement('li')
+uol.appendChild(totalit)
+totalit.textContent=`total: ${this.total} cookies`;
+}}
+Paris.calcCEHour();
+Paris.calcCoeh();
+Paris.rander();
+/////////////////////
+let Lima = {
+    Location:'Lima',
+    minCusPerHour:23 ,
+    maxCusPerHour :65 ,
+    avgCookPerCus :6.3,
+    CEHour:[],
+    Coeh:[],
+    total:0,
+
+calcCEHour:function(){
+        for(let i = 0 ; i <hour.length; i++)
+        { this.CEHour.push(random(this.minCusPerHour,this
+                .maxCusPerHour));   
+        }},
+
+calcCoeh:function(){
+       for (let i=0;i<hour.length;i++){
+this.Coeh.push(Math.floor(this.
+    CEHour[i]*this.avgCookPerCus));
+    this.total+=this.Coeh[i]
+    
+}
+//console.log(this.Coeh)
+},
+rander:function(){
+let parent=document.getElementById('parent');
+let shpn =document.createElement('h3');
+parent.appendChild(shpn);
+shpn.textContent=this.Location;
+let uol=document.createElement('ul');
+parent.appendChild(uol);
+
+for (let i=0;i<hour.length;i++){
+let liit=document.createElement('li');
+uol.appendChild(liit);
+liit.textContent = `${hour[i]}: ${this.Coeh[i]} cookies` 
+
+}
+let totalit=document.createElement('li')
+uol.appendChild(totalit)
+totalit.textContent=`total: ${this.total} cookies`;
+}}
+Lima.calcCEHour();
+Lima.calcCoeh();
+Lima.rander();
