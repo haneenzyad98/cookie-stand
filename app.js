@@ -97,7 +97,6 @@ let tr = document.createElement('tr')
     tr.appendChild(th)
     th.textContent='total'
     for (let z=0;z<15;z++){
- 
     let th = document.createElement('th')
     tr.appendChild(th)
     }
