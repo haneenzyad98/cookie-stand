@@ -1,7 +1,75 @@
-  
-table,th,td{
-    border: solid black 1px;
+ 
+ main{
+   background-image: url(wp1987894.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 1000px;
+ }
+
+.inp{
+  font-size:x-large;
 }
+#sup1{
+  border-radius: 12px;
+  font-size: 24px;
+  /* font color: #151B54; */
+}
+
+input[type=text] {
+  width: 85%;
+  padding: 6px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+
+
+table,th,td{
+  border: solid black 1px;
+  
+  
+}
+.hed{
+  font-size: 100px;
+  font-family: 'Patrick Hand', cursive;
+  
+  
+  
+}
+table{
+  float: right;
+  margin-top: 420px; 
+  /* margin-bottom: 0px; */
+}
+td:hover {background-color: #fff6f6;}
+
+th {
+  background-color: #728FCE;
+  color: rgb(252, 249, 249);
+}
+td{
+  background-color: #95B9C7;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+#feldset{
+  border: solid 5px #728FCE;  
+  float:right;
+  /* margin-bottom: 4000px;*/
+  margin-top:70px; 
+  /* margin-left: 350px; */
+  background-color:#728FCE ;
+  }
+  #sup1{
+      float: right;
+  }
+/* ------------------------------------------------------------------------ */
+
+
 
 nav ul li a {
     text-decoration: none;
@@ -46,20 +114,20 @@ address{
     font-style: oblique;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", select elements and textareas
 input[type=text], select, textarea {
-    width: 50%; /* Full width */
-    padding: 7px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 7px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+    width: 50%; Full width
+    padding: 7px; Some padding 
+    border: 1px solid #ccc; Gray border
+    border-radius: 4px; Rounded borders
+    box-sizing: border-box; Make sure that padding and width stays in place
+    margin-top: 6px; Add a top margin
+    margin-bottom: 7px; Bottom margin
+    resize: vertical Allow the user to vertically resize the textarea (not horizontally)
+  } */
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  /* input[type=submit] {
     background-color: white;
     color: black;
     padding: 12px 20px;
@@ -67,15 +135,15 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+   */
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  /* input[type=submit]:hover {
     background-color: black;
-  }
+  } */
   
   /* Add a background color and some padding around the form */
-  .container {
+  /* .container {
     border-radius: 5px;
     background-color: black;
     padding: 20px;
-  }
+  }  */
