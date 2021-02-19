@@ -38,8 +38,8 @@ table,th,td{
   
 }
 table{
-  float: right;
-  margin-top: 420px; 
+   float: right;
+ /* margin-top: 420px;  */
   /* margin-bottom: 0px; */
 }
 td:hover {background-color: #fff6f6;}
@@ -58,92 +58,103 @@ th, td {
 }
 #feldset{
   border: solid 5px #728FCE;  
-  float:right;
+  /* float:right; */
   /* margin-bottom: 4000px;*/
-  margin-top:70px; 
+  /* margin-top:70px;  */
   /* margin-left: 350px; */
   background-color:#728FCE ;
+  width: 250px;
+  float: right;
+  
   }
-  #sup1{
+  /* #sup1{
       float: right;
-  }
+  } */
 /* ------------------------------------------------------------------------ */
-
-
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 100px;
-    color: black; 
+#maine2{
+  background-image: url(wp1987894.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2000px;
 }
+
+
 #fir{
-    margin-top: 55px;
-background-image: url('../img/family.jpg');
+  margin-top: 55px;
+  background-image: url('../img/family.jpg');
 height: 600px;
 background-repeat: no-repeat;
 background-size: cover;
 }
 #sec{
-    background-image: url('../img/chinook.jpg');
-    height: 200px;
-    background-repeat: no-repeat;
+  background-image: url('../img/chinook.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
 }
 #ther{
-    background-image: url('../img/cutter.jpeg');
-    height: 200px;
-    background-repeat: no-repeat;
+  background-image: url('../img/cutter.jpeg');
+  height: 200px;
+  background-repeat: no-repeat;
 }
 #fur{
-    background-image: url('../img/fish.jpg');
-    height: 200px;
-    background-repeat: no-repeat;
+  background-image: url('../img/fish.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
 }
 #fif{
-    background-image: url('../img/frosted-cookie.jpg');
-    height: 200px;
-    background-repeat: no-repeat;
+  background-image: url('../img/frosted-cookie.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
 }
 #six{
-    background-image: url('../img/shirt.jpg');
-    height: 200px;
-    background-repeat: no-repeat;
-    
+  background-image: url('../img/shirt.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
+  
 }
 address{
-    font-size: larger;
-    font-style: oblique;
+  font-size: larger;
+  font-style: oblique;
 }
 
-/* Style inputs with type="text", select elements and textareas
-input[type=text], select, textarea {
-    width: 50%; Full width
-    padding: 7px; Some padding 
-    border: 1px solid #ccc; Gray border
-    border-radius: 4px; Rounded borders
-    box-sizing: border-box; Make sure that padding and width stays in place
-    margin-top: 6px; Add a top margin
-    margin-bottom: 7px; Bottom margin
-    resize: vertical Allow the user to vertically resize the textarea (not horizontally)
-  } */
+/* ------------------------------------------------------------------------ */
+#header2{
+  background-color:#87AFC7;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #151B54;
+}
+nav ul li{
+  display: inline-block;
+  padding: 30px;
+}
+
+/* --------------------------------------------------- */
+.mySlides{
+  margin-top: 200px;
+  width: 50%;
+  min-height: 300px;
+  margin-left: 500px;
+}
+input[type=submit] {
+  background-color: hsl(242, 67%, 11%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#fe2{
+  border: solid 5px #728FCE;  
+  /* float:right; */
+  /* margin-bottom: 4000px;*/
+  /* margin-top:70px;  */
+  /* margin-left: 350px; */
+  background-color:#728FCE ;
+  width:300px;
+  float: left;
+  margin-top: 0px;
   
-  /* Style the submit button with a specific background color etc */
-  /* input[type=submit] {
-    background-color: white;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
   }
-   */
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* input[type=submit]:hover {
-    background-color: black;
-  } */
-  
-  /* Add a background color and some padding around the form */
-  /* .container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 20px;
-  }  */
