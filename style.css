@@ -38,9 +38,11 @@ table,th,td{
   
 }
 table{
+  
    float: right;
  /* margin-top: 420px;  */
   /* margin-bottom: 0px; */
+  width: 100px;
 }
 td:hover {background-color: #fff6f6;}
 
@@ -64,27 +66,21 @@ th, td {
   /* margin-left: 350px; */
   background-color:#728FCE ;
   width: 250px;
-  float: right;
+  float: left;
   
   }
   /* #sup1{
       float: right;
   } */
 /* ------------------------------------------------------------------------ */
-#maine2{
-  background-image: url(wp1987894.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2000px;
-}
 
 
 #fir{
   margin-top: 55px;
   background-image: url('../img/family.jpg');
-height: 600px;
-background-repeat: no-repeat;
-background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #sec{
   background-image: url('../img/chinook.jpg');
@@ -122,9 +118,9 @@ address{
   background-color:#87AFC7;
 }
 nav ul li a {
-    text-decoration: none;
-    font-size: 40px;
-    color: #151B54;
+  text-decoration: none;
+  font-size: 40px;
+  color: #151B54;
 }
 nav ul li{
   display: inline-block;
@@ -134,8 +130,8 @@ nav ul li{
 /* --------------------------------------------------- */
 .mySlides{
   margin-top: 200px;
-  width: 50%;
-  min-height: 300px;
+  width: 40%;
+  min-height: 200px;
   margin-left: 500px;
 }
 input[type=submit] {
@@ -155,6 +151,12 @@ input[type=submit] {
   background-color:#728FCE ;
   width:300px;
   float: left;
-  margin-top: 0px;
+ 
   
-  }
+}
+#maine2{
+  background-image: url(wp1987894.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
