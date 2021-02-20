@@ -136,7 +136,8 @@ address{
 
 /* ------------------------------------------------------------------------ */
 #header2{
-  background-color:#87AFC7;
+  /* background-color:#87AFC7; */
+  background-color: #E5E4E2;
 }
 nav ul li a {
   text-decoration: none;
@@ -176,8 +177,10 @@ input[type=submit] {
   
 }
 #maine2{
-  background-image: url(wp1987894.jpg);
+  /* background-image: url(wp1987894.jpg); */
+  background-color: #E5E4E2;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;
+  background-color:#87AFC7;
 }
