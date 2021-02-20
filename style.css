@@ -1,9 +1,25 @@
  
  main{
-   background-image: url(wp1987894.jpg);
+   /* background-image: url(wp1987894.jpg); */
+   background-color: #E5E4E2;
    background-repeat: no-repeat;
    background-size: cover;
    height: 1000px;
+ }
+ #head2{
+   height: 500px;
+   
+   background-color: #E5E4E2;
+   
+  }
+  #snow{
+    
+    display: inline-block;
+/* background-image: url(img/snow.png);
+background-repeat: no-repeat;
+height: 600px; */
+/* float: right; */
+
  }
 
 .inp{
@@ -31,18 +47,20 @@ table,th,td{
   
 }
 .hed{
-  font-size: 100px;
-  font-family: 'Patrick Hand', cursive;
-  
-  
-  
+  font-size: 130px;
+  font-family: 'Ballet', cursive;
+  margin-left: 200px;
+  color: #151B54;
 }
 table{
   
    float: right;
  /* margin-top: 420px;  */
   /* margin-bottom: 0px; */
-  width: 100px;
+  width: 300px;
+  margin-top: 350px;
+  height: 330px;
+
 }
 td:hover {background-color: #fff6f6;}
 
@@ -67,6 +85,9 @@ th, td {
   background-color:#728FCE ;
   width: 250px;
   float: left;
+  /* float: right; */
+  margin-top: 350px;
+
   
   }
   /* #sup1{
